@@ -1,11 +1,24 @@
 package com.example.lele;
 
-import javafx.collections.*;
-import javafx.fxml.*;
-import javafx.scene.control.*;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+
 import java.time.LocalDate;
 
 public class ExpenseTrackerController {
+
+    private Main main;
+
+
+    public void setMain(Main main) {
+        this.main = main;
+    }
+
     @FXML
     private TableView<Expense> expenseTable;
 
@@ -30,7 +43,6 @@ public class ExpenseTrackerController {
     private ObservableList<Expense> expenses = FXCollections.observableArrayList();
 
     public void initialize() {
-
         descriptionColumn.setCellValueFactory(cellData -> cellData.getValue().descriptionProperty());
         amountColumn.setCellValueFactory(cellData -> cellData.getValue().amountProperty().asObject());
         dateColumn.setCellValueFactory(cellData -> cellData.getValue().dateProperty());
@@ -57,7 +69,8 @@ public class ExpenseTrackerController {
         Expense selectedExpense = expenseTable.getSelectionModel().getSelectedItem();
         if (selectedExpense != null) {
             expenses.remove(selectedExpense);
-        } else {
         }
     }
+
+
 }
