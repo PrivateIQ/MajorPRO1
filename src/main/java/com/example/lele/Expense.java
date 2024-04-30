@@ -10,18 +10,33 @@ public class Expense {
     private final DoubleProperty amount;
     private final ObjectProperty<LocalDate> date;
 
+    private final  StringProperty comments;
+
 
     private Stack<Expense> expenseStack;
     private LinkedList<Expense> expenseLinkedList;
 
-    public Expense(String description, double amount, LocalDate date) {
+    public Expense(String description, double amount, LocalDate date,String comments) {
         this.description = new SimpleStringProperty(description);
         this.amount = new SimpleDoubleProperty(amount);
         this.date = new SimpleObjectProperty<>(date);
+        this.comments = new SimpleStringProperty(comments);
 
         expenseStack = new Stack<>();
         expenseLinkedList = new LinkedList<>();
     }
+    public String getComments() {
+        return comments.get();
+    }
+
+    public StringProperty commentsProperty() {
+        return comments;
+    }
+
+    public void setComments(String comments) {
+        this.comments.set(comments);
+    }
+
 
 
     public String getDescription() {
@@ -60,7 +75,6 @@ public class Expense {
         this.date.set(date);
     }
 
-    // Additional methods for stack and linked list operations
 
     public void addToStack() {
         expenseStack.push(this);

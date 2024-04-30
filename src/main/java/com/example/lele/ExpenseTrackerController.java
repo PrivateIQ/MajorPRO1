@@ -30,7 +30,8 @@ public class ExpenseTrackerController {
 
     @FXML
     private TableColumn<Expense, LocalDate> dateColumn;
-
+    @FXML
+    private TableColumn<Expense, String> commentsColumn;
     @FXML
     private TextField descriptionField;
 
@@ -40,13 +41,15 @@ public class ExpenseTrackerController {
     @FXML
     private DatePicker datePicker;
 
+    @FXML
+    private TextField commentField;
     private ObservableList<Expense> expenses = FXCollections.observableArrayList();
 
     public void initialize() {
         descriptionColumn.setCellValueFactory(cellData -> cellData.getValue().descriptionProperty());
         amountColumn.setCellValueFactory(cellData -> cellData.getValue().amountProperty().asObject());
         dateColumn.setCellValueFactory(cellData -> cellData.getValue().dateProperty());
-
+        commentsColumn.setCellValueFactory(cellData -> cellData.getValue().commentsProperty());
         expenseTable.setItems(expenses);
     }
 
@@ -55,8 +58,9 @@ public class ExpenseTrackerController {
         String description = descriptionField.getText();
         double amount = Double.parseDouble(amountField.getText());
         LocalDate date = datePicker.getValue();
+        String comments = commentField.getText();
 
-        Expense expense = new Expense(description, amount, date);
+        Expense expense = new Expense(description, amount, date, comments);
         expenses.add(expense);
 
         descriptionField.clear();

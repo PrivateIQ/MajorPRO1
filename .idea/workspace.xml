@@ -8,8 +8,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lele/Expense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lele/Expense.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lele/ExpenseTrackerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lele/ExpenseTrackerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lele/f.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lele/ExpenseSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/lele/ExpenseTracker.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/lele/ExpenseTracker.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/lele/Expense.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/lele/Expense.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/lele/ExpenseTracker.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/lele/ExpenseTracker.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/lele/ExpenseTrackerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/lele/ExpenseTrackerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/lele/f.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,16 +157,5 @@
     <MESSAGE value="test1" />
     <MESSAGE value="test" />
     <option name="LAST_COMMIT_MESSAGE" value="test" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/lele/Main.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
