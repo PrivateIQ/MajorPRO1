@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec7ebded-24b6-47d3-a5c7-399ac90bf09f" name="Changes" comment="test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lele/Expense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lele/Expense.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lele/ExpenseTrackerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lele/ExpenseTrackerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lele/f.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lele/ExpenseSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/lele/ExpenseTracker.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/lele/ExpenseTracker.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/lele/Expense.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/lele/Expense.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/lele/ExpenseTracker.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/lele/ExpenseTracker.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/lele/ExpenseTrackerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/lele/ExpenseTrackerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/lele/f.class" beforeDir="false" />
-    </list>
+    <list default="true" id="ec7ebded-24b6-47d3-a5c7-399ac90bf09f" name="Changes" comment="4/29/24" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713286452876</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="4/29/24">
+      <created>1714446384171</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714446384171</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,6 +153,7 @@
     <MESSAGE value="test3" />
     <MESSAGE value="test1" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="4/29/24" />
+    <option name="LAST_COMMIT_MESSAGE" value="4/29/24" />
   </component>
 </project>
