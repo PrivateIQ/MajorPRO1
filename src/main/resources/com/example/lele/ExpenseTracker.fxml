@@ -7,24 +7,35 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.example.lele.ExpenseTrackerController">
+<AnchorPane id="AnchorPane" prefHeight="679.0" prefWidth="1059.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lele.ExpenseTrackerController">
     <children>
+        <TextField fx:id="searchField" layoutX="..." layoutY="..." prefWidth="..." />
         <Label layoutX="14.0" layoutY="14.0" text="Expenses" />
-        <TextField fx:id="descriptionField" layoutX="100.0" layoutY="10.0" prefHeight="25.0" prefWidth="271.0" />
-        <Label layoutX="14.0" layoutY="54.0" text="Amount:" />
-        <TextField fx:id="amountField" layoutX="100.0" layoutY="50.0" prefHeight="25.0" prefWidth="271.0" />
-        <Label layoutX="14.0" layoutY="94.0" text="Date:" />
-        <DatePicker fx:id="datePicker" layoutX="100.0" layoutY="90.0" prefHeight="25.0" prefWidth="271.0" />
-        <Button layoutX="100.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleAddExpense" prefHeight="25.0" prefWidth="246.0" text="Add" />
-        <TableView fx:id="expenseTable" layoutX="14.0" layoutY="180.0" prefHeight="200.0" prefWidth="572.0">
+        <TextField fx:id="descriptionField" layoutX="89.0" layoutY="10.0" prefHeight="25.0" prefWidth="419.0" />
+        <Label layoutX="14.0" layoutY="46.0" prefHeight="25.0" prefWidth="46.0" text="Amount:" />
+        <TextField fx:id="amountField" layoutX="89.0" layoutY="42.0" prefHeight="25.0" prefWidth="419.0" />
+        <Label layoutX="16.0" layoutY="82.0" prefHeight="38.0" prefWidth="46.0" text="Date:" />
+        <DatePicker fx:id="datePicker" layoutX="89.0" layoutY="85.0" prefHeight="31.0" prefWidth="429.0" />
+        <Button layoutX="31.0" layoutY="217.0" mnemonicParsing="false" onAction="#handleAddExpense" prefHeight="48.0" prefWidth="299.0" text="Add" />
+        <TableView fx:id="expenseTable" layoutX="37.0" layoutY="279.0" prefHeight="355.0" prefWidth="920.0">
             <columns>
                 <TableColumn fx:id="descriptionColumn" prefWidth="150.0" text="Expenses" />
                 <TableColumn fx:id="amountColumn" prefWidth="100.0" text="Amount" />
                 <TableColumn fx:id="dateColumn" prefWidth="150.0" text="Date" />
-                <TableColumn fx:id="commentsColumn" prefWidth="150.0" text="Comments" />
+                <TableColumn fx:id="commentsColumn" prefWidth="169.0" text="Comments" />
             </columns>
         </TableView>
-        <Button layoutX="452.0" layoutY="102.0" mnemonicParsing="false" onAction="#handleDeleteExpense" prefHeight="72.0" prefWidth="105.0" text="Delete " />
+        <Button layoutX="370.0" layoutY="217.0" mnemonicParsing="false" onAction="#handleDeleteExpense" prefHeight="48.0" prefWidth="320.0" text="Delete " />
+        <TextField fx:id="descriptionField1" layoutX="89.0" layoutY="136.0" prefHeight="72.0" prefWidth="437.0" />
+        <Label layoutX="7.0" layoutY="139.0" prefHeight="65.0" prefWidth="88.0" text="Comments">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="929.0" layoutY="108.0" prefHeight="11.0" prefWidth="88.0" text="Search expenses" />
+        <TextField fx:id="searchField" layoutX="653.0" layoutY="107.0" prefHeight="65.0" prefWidth="264.0" />
+        <TextField fx:id="commentField1" layoutX="89.0" layoutY="136.0" prefHeight="72.0" prefWidth="437.0" />
     </children>
 </AnchorPane>

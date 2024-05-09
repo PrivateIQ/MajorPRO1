@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("ExpenseTracker.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Expense2Tracker.fxml"));
         stage.setTitle("com.example.lele.Expense Tracker");
         Scene scene = new Scene(root);
         stage.setScene(scene);
